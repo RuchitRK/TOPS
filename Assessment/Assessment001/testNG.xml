@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ShopEz Assessment Suite">
+
+    <test name="Functional Tests">
+        <classes>
+            <class name="com.shopezusa.tests.LoginTest"/>
+            <class name="com.shopezusa.tests.AddToCartTest"/>
+        </classes>
+    </test>
+</suite>
