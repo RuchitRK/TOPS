@@ -1,0 +1,192 @@
+{
+  "info": {
+    "_postman_id": "e7001b3e-319c-44c8-9086-8047f0665e87",
+    "name": "TOPS_Assignment_Module_10",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51914670",
+    "_collection_link": "https://go.postman.co/collection/51914670-e7001b3e-319c-44c8-9086-8047f0665e87?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"fname\": \"Ruchit\",\r\n  \"lname\": \"Tester\",\r\n  \"email\": \"ruchit@gmail.com\",\r\n  \"phno\": \"9876543210\",\r\n  \"pass\": \"Pass123\",\r\n  \"gender\": \"Male\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://restapilive.onrender.com/userreg",
+          "protocol": "https",
+          "host": [
+            "restapilive",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "userreg"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"ruchit@gmail.com\",\r\n  \"pass\": \"Pass123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://restapilive.onrender.com/userlogin",
+          "protocol": "https",
+          "host": [
+            "restapilive",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "userlogin"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "3",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"admin@gmail.com\",\r\n  \"password\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://restapilive.onrender.com/alogin",
+          "protocol": "https",
+          "host": [
+            "restapilive",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "alogin"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "4",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "admin-auth-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3NzQ2ODE2MDJ9.6nTR2SLSjq1hR30j4vaSGCqAGoUH3PHC7IbAWTYcdXQ",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"catname\": \"Electronics\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://restapilive.onrender.com/addcategory",
+          "protocol": "https",
+          "host": [
+            "restapilive",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "addcategory"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "5",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "admin-auth-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3NzQ2ODE2MDJ9.6nTR2SLSjq1hR30j4vaSGCqAGoUH3PHC7IbAWTYcdXQ",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://restapilive.onrender.com/category",
+          "protocol": "https",
+          "host": [
+            "restapilive",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "category"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "6",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "admin-auth-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3NzQ2ODE2MDJ9.6nTR2SLSjq1hR30j4vaSGCqAGoUH3PHC7IbAWTYcdXQ",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://restapilive.onrender.com/deletecat?did=69aa7c4b9f8939c45fa891f3",
+          "protocol": "https",
+          "host": [
+            "restapilive",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "deletecat"
+          ],
+          "query": [
+            {
+              "key": "did",
+              "value": "69aa7c4b9f8939c45fa891f3",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
