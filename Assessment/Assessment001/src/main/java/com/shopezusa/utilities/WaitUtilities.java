@@ -1,4 +1,4 @@
-package com.shopezusa.utilities; // Use your actual package name
+package com.shopezusa.utilities;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
